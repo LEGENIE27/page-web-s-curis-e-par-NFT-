@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Sécurisée par NFT</title>
+    <style>
+        #content, #error {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Accès Sécurisé par NFT</h1>
+    <div id="loading">Vérification de votre NFT en cours...</div>
+    <div id="content">
+        <h2>Bienvenue sur la page sécurisée !</h2>
+        <p>Vous avez accès à cette page car vous possédez le NFT requis.</p>
+    </div>
+    <div id="error">
+        <h2>Accès refusé</h2>
+        <p>Vous ne possédez pas le NFT requis pour accéder à cette page.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="verify-nft.js"></script>
+</body>
+</html>
